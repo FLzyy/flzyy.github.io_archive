@@ -1,0 +1,85 @@
+---
+import Layout from '../layouts/Layout.astro';
+import SocialCard  from '../components/SocialCard.astro';
+import { Image } from '@astrojs/image/components';
+---
+
+<Layout title="FLzyy's Profile - Contact">
+
+	<!-- Page -->
+	<main class="h-screen bg-[url('/bg.svg')] bg-cover bg-center w-screen">
+
+		<!-- Container for Card -->
+		<div class="flex justify-center items-center h-screen w-screen">
+
+			<!-- Card -->
+			<div class="w-[28rem] h-[42rem] shadow-md bg-gradient-to-br from-slate-600 to-slate-800 rounded-xl">	
+
+				<!-- Container for Content -->
+				<div>
+					<div class="border-solid border-[7px] border-slate-200 font-display rounded-full w-[12.6rem] h-[12.6rem] mt-8 mb-4 drop-shadow-2xl block mr-auto ml-auto bg-[url('/profile.gif')] bg-cover bg-center bg-no-repeat"></div>
+					<h2 class="text-center text-slate-300 text-5xl font-[500] drop-shadow-md mb-4">FLzyy</h2>
+		
+					<div class="overflow-x-hidden overflow-y-auto max-h-[21rem] w-[24rem] mx-auto">
+						<SocialCard Logo="/icons/discord.png" Content="FLzyy#6202" LogoColor="#5466a5" Width="4.3rem" Height="auto"/>
+						<SocialCard Logo="/icons/github.png" Content="FLzyy" LogoColor="#999999" Width="4.3rem" Height="4.1rem"/>
+						<SocialCard Logo="/icons/email.png" Content="flzyy72@gmail.com" LogoColor="#eeeeee" Width="4.3rem" Height="auto"/>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="w-[28rem] h-[42rem] flex flex-col">	
+
+				<div class="ml-4 mb-[1rem] w-[30rem] h-[8rem] shadow-md bg-gradient-to-bl from-slate-600 to-slate-800 rounded-xl">	
+					<h2 class="m-3 text-[1.35rem] font-semibold text-slate-100">Description:</h2>
+					<h3 class="font-normal text-slate-100 drop-shadow-md m-3 text-[1rem] ">🛠️ Learning 3D Generalist, 👨‍💻 Learning Web Developer, 🕹️ Learning Game Developer, <Image src="/copium.png" class="inline w-6 mb-2 h-auto" alt="" width={5000} height={5000}/> 10x Developer</h3>
+				</div>
+	
+				<div class="ml-4 mb-[1rem] w-[30rem] h-[11rem] shadow-md bg-gradient-to-bl from-slate-600 to-slate-800 rounded-xl">	
+					<h2 class="m-3 text-[1.35rem] font-semibold text-slate-100">Donate/Wallets:</h2>
+					<ul class="m-3">
+						<li class="list-disc m-2 ml-7 text-[1rem] font-normal text-slate-100">BTC: <strong>bc1qk02zpwk96zjl50r5eac94vhpltfx57yl7vae3n</strong></li>
+						<li class="list-disc m-2 ml-7 text-[1rem] font-normal text-slate-100">ETH: <strong>0x7c9aBc3837a8C3a5A176e4f58A1c6FebbFe0bf84</strong></li>
+						<li class="list-disc m-2 ml-7 text-[1rem] font-normal text-slate-100">Ko-fi: <a href="https://ko-fi.com/flzyy" class="underline underline-offset-2" rel="prefetch"><strong>https://ko-fi.com/flzyy</strong></a></li>
+					</ul>
+				</div>
+
+				<div class="ml-4 mb-[1rem] w-[30rem] h-[11rem] shadow-md bg-gradient-to-bl from-slate-600 to-slate-800 rounded-xl">	
+					<h2 class="m-3 text-[1.35rem] font-semibold text-slate-100">Referrals:</h2>
+					<ul class="m-3">
+						<li class="list-disc m-2 ml-7 text-[1rem] font-normal text-slate-100"><a href="https://salad.com/download" class="underline underline-offset-2" rel="prefetch">Salad.io</a>: <strong>K3OWL0</strong></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</main>
+</Layout>
+
+<style>
+	/* Firefox */
+	* {
+		scrollbar-width: thin;
+		scrollbar-color: rgb(50, 61, 77) rgb(65, 80, 100);
+	}
+
+	/* Chrome, Edge, Safari, Opera, Vivaldi, etc. */
+	*::-webkit-scrollbar {
+		width: 13px;
+	}
+
+	*::-webkit-scrollbar-track {
+		background: rgb(65, 80, 100);
+		border-radius: 14px;
+	}
+
+	*::-webkit-scrollbar-thumb {
+		background-color: rgb(50, 61, 77);
+		border-radius: 20px;
+		border: 2px solid rgb(29, 43, 63);
+	}
+
+	main {
+		background-color: #90d4ec;
+	}
+</style>

@@ -1,0 +1,16 @@
+---
+export interface Props {
+	Logo?: string;
+	Content?: string;
+	LogoColor?: string;
+	Width?: string;
+	Height?: string;
+}
+---
+
+<div class="transition-[width] ease-out delay-75 bg-gradient-to-r from-slate-600 to-slate-700 block w-[21rem] h-[4.3rem] mr-auto ml-auto mt-8 mb-6 rounded-lg shadow-lg drop-shadow-lg hover:w-[22rem]">					
+	<h3 class="inline-flex float-right text-[1.35rem] text-opacity-90 text-slate-200 font-light drop-shadow-md mt-[1.1rem] mr-4">{Astro.props.Content}</h3>
+	<div class="absolute bgcolor rounded-l-lg h-[4.3rem] float-left shadow-lg flex items-center justify-center" style={`background-color: ${Astro.props.LogoColor};`}>
+		<img class="mx-4 drop-shadow-lg" style={`width: ${Astro.props.Width}; height: ${Astro.props.Height};`} src={Astro.props.Logo}>
+	</div>
+</div>
